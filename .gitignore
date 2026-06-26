@@ -1,0 +1,20 @@
+# Entornos virtuales (Carpetas que crea pip/python locales)
+.venv/
+venv/
+env/
+ENV/
+
+# Archivos temporales de Python (Caché de compilación)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Configuraciones locales de Visual Studio Code
+.vscode/
+
+# Archivos temporales del sistema operativo
+.DS_Store
+Thumbs.db
+
+# Configuraciones locales de Streamlit
+.streamlit/config.toml
