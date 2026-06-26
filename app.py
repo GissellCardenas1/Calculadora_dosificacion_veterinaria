@@ -181,13 +181,27 @@ st.markdown('</div>', unsafe_allow_html=True) # Cierre de la tarjeta principal
 
 # 4. Sección de Descargo Legal abajo
 st.markdown("<br>", unsafe_allow_html=True)
-with st.expander("Descargo legal"):
-    st.caption("""
-    **ADVERTENCIA LEGAL Y EXENCIÓN DE RESPONSABILIDAD**
-    
-    Este software es una herramienta de apoyo al cálculo aritmético con fines estrictamente educativos. La determinación de la dosis definitiva es responsabilidad exclusiva del Médico Veterinario tratante, quien debe validar los resultados con base en el estado fisiológico, patológico y la anamnesis del paciente.
-    
-    Los cálculos obtenidos no consideran variables críticas como la función renal, hepática o edad del animal. Por lo tanto, el autor se deslinda de toda responsabilidad por efectos adversos o errores derivados del uso de esta información sin supervisión profesional calificada.
-    
-    Uso sujeto a la normativa de ética profesional (Ley 576 de 2000).
-    """)
+st.markdown(
+    """
+    <div style="
+        background-color: rgba(26, 36, 43, 0.05); 
+        border-left: 4px solid #D4AF37; 
+        padding: 15px; 
+        border-radius: 4px; 
+        margin-top: 10px;
+    ">
+        <p style="color: #1A242B; font-size: 0.85rem; margin: 0 0 8px 0; font-weight: bold;">
+            ⚠️ ADVERTENCIA LEGAL Y EXENCIÓN DE RESPONSABILIDAD
+        </p>
+        <p style="color: #1A242B; font-size: 0.85rem; margin: 0 0 8px 0; line-height: 1.4;">
+            Este software es una herramienta de apoyo al cálculo aritmético con fines estrictamente educativos. La determinación de la dosis definitiva queda bajo la responsabilidad del profesional a cargo.
+        </p>
+        <p style="color: #1A242B; font-size: 0.85rem; margin: 0 0 8px 0; line-height: 1.4;">
+            Los cálculos obtenidos no consideran variables críticas como la función renal, hepática o edad del animal. Por lo tanto, el autor se deslinda de cualquier responsabilidad por el uso de esta información.
+        </p>
+        <p style="color: #1A242B; font-size: 0.85rem; margin: 0; font-weight: 500;">
+            Uso sujeto a la normativa de ética profesional (Ley 576 de 2000).
+        </p>
+    </div>
+    """, 
+    unsafe_allow_html=True)
